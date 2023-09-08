@@ -6,18 +6,20 @@ public:
             if(st.empty()){
                 st.push(c);
             }
-            else if( (st.top() == '(' && c == ')') || 
-             (st.top() == '[' && c == ']') || 
-             (st.top() == '{' && c == '}') ){
-              st.pop();
+            else if((st.top() == '(' && c == ')') ||
+                  (st.top() == '{' && c == '}') ||
+                  (st.top() == '[' && c == ']') ){
+                st.pop();
             }
-            else {
+            else{
                 st.push(c);
             }
-        }
-        if(st.size()==0)
-             return true;
-        return false;
+                
+            }
+        if(st.size() == 0)
+            return true;
+        
+    return false;
         
     }
 };
