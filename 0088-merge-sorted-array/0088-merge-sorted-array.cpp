@@ -11,3 +11,13 @@ public:
 };
 
 
+/*
+
+    Time Complexity : O(MlogM), Sorting the array(nums1) costs O(MlogM). Where M is the size of the
+    Array(nums1).
+
+    Space Complexity : O(1), Constant Space. 
+
+    Solved using Array + Sorting.
+
+*/
